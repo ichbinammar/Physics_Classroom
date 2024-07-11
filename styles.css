@@ -1,0 +1,117 @@
+	/* General Styles */
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #ffefd5; /* papaya whip */
+	}
+
+	header {
+		background-color: #ff6f61; /* coral */
+		color: #ffffff; /* white */
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.sidebar {
+		width: 200px;
+		background-color: #ffb6c1; /* light pink */
+		color: #ffffff; /* white */
+		padding: 20px;
+		height: 100vh; /* Full height of the viewport */
+		box-sizing: border-box;
+	}
+
+	.sidebar ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.sidebar ul li {
+		margin: 10px 0;
+	}
+
+	.sidebar ul li a {
+		color: #ffffff; /* white */
+		text-decoration: none;
+	}
+
+	.sidebar ul li a:hover {
+		text-decoration: underline;
+	}
+	.sidebar button {
+		display: block;
+		width: 100%;
+		padding: 50px;
+		margin-bottom: 5px;
+		text-align: center;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		cursor: pointer;
+	}
+
+	.sidebar button:hover {
+		background-color: #45a049;
+	}
+
+	main {
+		flex-grow: 1;
+		padding: 20px;
+		background-color: #fffacd; /* lemon chiffon */
+		box-sizing: border-box;
+	}
+
+	a {
+		color: #ff69b4; /* hot pink */
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #ff1493; /* deep pink */
+		text-decoration: underline;
+	}
+	/* Define the keyframes for the animation */
+	@keyframes moveRightToLeft {
+		0% {
+			transform: translateX(60%);
+		}
+		50% {
+			transform: translateX(-70%);
+		}
+	}
+
+	/* Apply the animation to the header text */
+	.header-text {
+		animation: moveRightToLeft 20s linear 1; /* Adjust duration and timing function as needed */
+		font-size: 50px;
+	}
+.service-list {
+    list-style: none; /* Remove default list styles (bullets) */
+    padding: 0; /* Remove default padding */
+}
+
+.service-list li {
+    margin-bottom: 10px; /* Add space below each list item */
+}
+
+.service-list li button {
+    display: block; /* Display buttons as block elements */
+    width: 50%; /* Full width of their container */
+    padding: 15px; /* Increase padding to make buttons bigger */
+    font-size: 18px; /* Increase font size */
+    text-align: left; /* Align text to the left */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.service-list li button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
