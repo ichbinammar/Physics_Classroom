@@ -12,6 +12,21 @@
 		padding: 20px 0;
 		text-align: center;
 	}
+<<<<<<< HEAD
+=======
+	body h2.learn{
+		font-size: 3em;
+		width: 50%;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		background-color: #E5D1E5; /* Choose your desired background color */
+		color: white; /* Text color */
+		padding: 10px 20px; /* Padding around text */
+		border-radius: 5px; /* Rounded corners */
+}
+
+>>>>>>> 4e2ab99 (initial commit)
 
 	.container {
 		display: flex;
@@ -91,6 +106,7 @@
 		animation: moveRightToLeft 20s linear 1; /* Adjust duration and timing function as needed */
 		font-size: 50px;
 	}
+<<<<<<< HEAD
 .service-list {
     list-style: none; /* Remove default list styles (bullets) */
     padding: 0; /* Remove default padding */
@@ -103,6 +119,29 @@
 .service-list li button {
     display: block; /* Display buttons as block elements */
     width: 50%; /* Full width of their container */
+=======
+	.service-list {
+    display: grid; /* Enables grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Creates responsive columns */
+    gap: 10px; /* Adds space between items */
+	flex-direction: column; /* Arranges items vertically */
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+	}
+
+	.service-list li {
+    margin: 10px; /* Adds space around each list item */
+	margin-bottom: 10px; /* Add space below each list item */
+	 flex-basis: calc(33.333% - 20px); /* Each button takes up 1/3 of the container width minus margin */
+	}
+
+	.service-list li button {
+    display: block; /* Display buttons as block elements */
+    width: 100%; /* Full width of their container */
+>>>>>>> 4e2ab99 (initial commit)
     padding: 15px; /* Increase padding to make buttons bigger */
     font-size: 18px; /* Increase font size */
     text-align: left; /* Align text to the left */
@@ -110,8 +149,109 @@
     color: white; /* White text color */
     border: none; /* Remove border */
     cursor: pointer; /* Change cursor to pointer on hover */
+<<<<<<< HEAD
 }
 
 .service-list li button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
+=======
+	}
+
+	.service-list li button:hover {
+    background-color: #45a049; /* Darker green on hover */
+	}
+	.service-list a {
+    display: inine-block; /* Ensures the anchor tags are block elements and that the margin is applied correctly */
+    padding: 10px 20px; /* Adds padding inside the anchor tags */
+    font-size: 16px; /* Sets the font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: none; /* Removes default border */
+    background-color: #4CAF50; /* Sets anchor tag background color */
+    color: white; /* Sets anchor tag text color */
+    border-radius: 5px; /* Rounds the corners */
+    text-decoration: none; /* Removes underline from links */
+    text-align: center; /* Centers text inside the anchor tags */
+	margin-bottom: 20px; /* Adds space below each link */
+	margin: 10px 0; /* Adds space above and below each link */
+}
+	}
+
+/* General styles for all anchor tags made to look like buttons */
+	.button-link {
+    display: block; /* Ensures the anchor tags are block elements */
+    padding: 10px 20px; /* Adds padding inside the anchor tags */
+    font-size: 16px; /* Sets the font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border: none; /* Removes default border */
+    background-color: #4CAF50; /* Sets anchor tag background color */
+    color: white; /* Sets anchor tag text color */
+    border-radius: 5px; /* Rounds the corners */
+    text-decoration: none; /* Removes underline from links */
+    text-align: center; /* Centers text inside the anchor tags */
+	}
+
+	.ppt-container {
+    display: flex; /* This makes the container a flexbox container */
+    flex-direction: column; /* Children elements are arranged in a column (top to bottom) */
+    align-items: center; /* Center-aligns children elements horizontally */
+    justify-content: center; /* Center-aligns children elements vertically */
+    height: 100vh; /* Sets the height of the container to 100% of the viewport height */
+    text-align: center; /* Center-aligns text inside the container */
+	}
+	.ppt-frame {
+    width: 90%;
+    height: 90%;
+    border: none;
+	}
+	.ppt-container p {
+		margin-bottom: 20px;
+	}
+	.ppt-container a {
+		display: inline-block;
+		padding: 10px 20px;
+		background-color: #4CAF50;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+
+	.ppt-container a:hover {
+		background-color: #45a049;
+	}
+	.plugin-link {
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.plugin-link p {
+		font-size: 1em;
+		margin-bottom: 10px;
+	}
+
+	.plugin-link a {
+		color: #4CAF50;
+		text-decoration: none;
+	}
+
+	.plugin-link a:hover {
+		text-decoration: underline;
+	}
+	.back-button {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		padding: 10px 20px;
+		background-color: #4CAF50;
+		color: white;
+		border: none;
+		cursor: pointer;
+	}
+
+	.back-button:hover {
+		background-color: #45a049;
+	}
+
+
+>>>>>>> 4e2ab99 (initial commit)
